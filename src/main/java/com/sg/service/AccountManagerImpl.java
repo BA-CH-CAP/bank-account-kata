@@ -11,7 +11,7 @@ import java.util.Map;
 @Service
 public class AccountManagerImpl implements AccountManager {
 
-    private static final Map<Long, Account> accounts = new HashMap<>();
+    private Map<Long, Account> accounts = new HashMap<>();
 
     @Override
     public Map<Long, Account> findAll() {
